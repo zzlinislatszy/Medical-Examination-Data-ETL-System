@@ -44,3 +44,38 @@ Goal: Demonstrate how LLMs can be safely integrated into data pipelines without 
 
 This repository is a sanitized demo project created for portfolio purposes only.
 All data, identifiers, schemas, and prompts are synthetic or mocked, and do not represent any real production systems.
+
+## Project Structure
+- `app.py`: FastAPI entry point
+- `db_to_dataframe.py`: JSON -> DataFrame + (optional) pymongo enrichment via env vars
+- `data_preprocessing.py`: data cleaning / normalization
+- `text_processing.py`: hierarchical text generation API
+- `llm_processing.py`: LLM interface (supports mock mode when no keys)
+- `utils.py`: shared utilities
+
+## Run
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+Open:
+- `GET /` health check
+- `POST /process` to process input
+
+## Environment Variables (Optional)
+If you want to connect to your own MongoDB for demo enrichment:
+
+- `MONGODB_URI`
+- `MONGODB_DB_MAIN`
+- `MONGODB_DB_AUX`
+- `MONGODB_COL_ITEM_META`
+- `MONGODB_COL_ITEM_GROUP_MAP`
+- `MONGODB_COL_DIAG`
+- `MONGODB_COL_SUMMARY`
+
+LLM (optional):
+- `AZURE_OPENAI_ENDPOINT`
+- `AZURE_OPENAI_API_KEY`
+- `AZURE_OPENAI_API_VERSION` (default: 2024-08-01-preview)
+- `AZURE_OPENAI_DEPLOYMENT` (default: gpt-4o)
