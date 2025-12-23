@@ -1,0 +1,29 @@
+[
+  {
+    "RECORD_ID": "R001",
+    "LANG_NO": "1",
+    "ORG_ID": "ORG_A",
+    "ITEMS": [
+      {
+        "ITEM_CODE": "I001",
+        "FINDINGS": [
+          {
+            "DIAG_CODE": "D001",
+            "COMMENT": "範例說明文字 A",
+            "SUMMARY_CODE": "S001"
+          }
+        ]
+      },
+      {
+        "ITEM_CODE": "I002",
+        "FINDINGS": [
+          {
+            "DIAG_CODE": "D002",
+            "COMMENT": "範例說明文字 B",
+            "SUMMARY_CODE": "S002"
+          }
+        ]
+      }
+    ]
+  }
+]
