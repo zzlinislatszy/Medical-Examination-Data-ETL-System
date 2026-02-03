@@ -1,8 +1,7 @@
-# medical_examination_ETL
-This project is an end-to-end data processing pipeline that transforms semi-structured JSON inputs into cleaned, structured, and hierarchical text outputs, with optional LLM integration for text refinement.
+# Medical Examination Data ETL System
+This project is an end-to-end data processing system that transforms semi-structured JSON inputs into cleaned, structured, and hierarchical text outputs, with optional LLM integration for text refinement.
 
 ## Functional Flow
-
 The pipeline consists of the following stages:
 
 ### 1. Data Ingestion & Mapping
@@ -39,11 +38,6 @@ Goal: Demonstrate how LLMs can be safely integrated into data pipelines without 
 - Outputs intermediate and final results as CSV files
 - Returns processed text results as JSON via API
 - Designed to be reproducible and suitable for both testing and production-like workflows
-
-### Note on Data & Privacy
-
-This repository is a sanitized demo project created for portfolio purposes only.
-All data, identifiers, schemas, and prompts are synthetic or mocked, and do not represent any real production systems.
 
 ## Project Structure
 - `app.py`: FastAPI entry point
