@@ -40,12 +40,15 @@ Goal: Demonstrate how LLMs can be safely integrated into data pipelines without 
 - Designed to be reproducible and suitable for both testing and production-like workflows
 
 ## Project Structure
-- `app.py`: FastAPI entry point
-- `db_to_dataframe.py`: JSON -> DataFrame + (optional) pymongo enrichment via env vars
-- `data_preprocessing.py`: data cleaning / normalization
-- `text_processing.py`: hierarchical text generation API
-- `llm_processing.py`: LLM interface (supports mock mode when no keys)
-- `utils.py`: shared utilities
+```
+Medical Examination Data ETL System/
+├── app.py                       # FastAPI entry point
+├── db_to_dataframe.py           # JSON -> DataFrame + (optional) pymongo enrichment via env vars
+├── data_preprocessing.py        # data cleaning / normalization
+├── text_processing.py           # hierarchical text generation API
+├── llm_processing.py            # LLM interface (supports mock mode when no keys)
+└── utils.py                     # shared utilities
+```
 
 ## Run
 ```bash
