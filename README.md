@@ -1,7 +1,7 @@
 # Medical Examination Data ETL System
 This project is an end-to-end data processing system that transforms semi-structured JSON inputs into cleaned, structured, and hierarchical text outputs, with optional LLM integration for text refinement.
 
-## Functional Flow
+## Flow
 The pipeline consists of the following stages:
 
 ### 1. Data Ingestion & Mapping
